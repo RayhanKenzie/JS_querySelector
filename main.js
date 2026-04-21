@@ -1,16 +1,16 @@
-// const judul = document.querySelector("#judul");
-// judul.innerText = "Judul sudah diubah dengan innerText";
-// judul.style.color = "blue";
-// judul.style.fontSize = "44px";
+const judul = document.querySelector("#judul");
+judul.innerText = "Judul sudah diubah dengan innerText";
+judul.style.color = "blue";
+judul.style.fontSize = "44px";
 
-// const paragraf = document.querySelector(".paragraf");
-// paragraf.innerText = "Paragraf diganti dengan innerText";
+const paragraf = document.querySelector(".paragraf");
+paragraf.innerText = "Paragraf diganti dengan innerText";
 
-// const paragraf2 = document.querySelector("span");
-// paragraf2.innerText = ("paragraf 2 diganti dengan innerText");
+const paragraf2 = document.querySelector("span");
+paragraf2.innerText = ("paragraf 2 diganti dengan innerText");
 
-// const header = document.querySelectorAll("h2");
-// header[0].innerText = "h2 diganti semua";
+const header = document.querySelectorAll("h2");
+header[0].innerText = "h2 diganti semua";
 
 function sayHello() {
     alert("Hello World");
@@ -22,3 +22,14 @@ btn.onclick = function() {
     alert("Selamat anda berhasil mendaftar");
     console.log("Congrats");
 }
+
+const debug = document.querySelector("#debug");
+debug.onclick = () => {
+    alert("Debug mode activated");
+    console.log("Debug mode activated");
+}
+
+const addEvent = document.querySelector("#addEvent");
+addEvent.addEventListener("click", function() {
+    alert("Ini add event listener")
+})
